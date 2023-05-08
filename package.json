@@ -1,0 +1,29 @@
+{
+  "name": "goit-node-hw-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiLoT-P/goit-node-hw-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiLoT-P/goit-node-hw-1/issues"
+  },
+  "homepage": "https://github.com/PiLoT-P/goit-node-hw-1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "type": "module",
+  "dependencies": {
+    "commander": "^10.0.1",
+    "nanoid": "^4.0.2"
+  }
+}
