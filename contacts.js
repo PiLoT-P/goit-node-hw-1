@@ -1,6 +1,6 @@
 const { readFile, writeFile } = require('fs/promises');
 const path = require('path');
-const { nanoid } = import('nanoid');
+const shortid = require('shortid');
 
 const contactsPath = path.join(__dirname, 'db', 'contacts.json');
 
@@ -47,7 +47,7 @@ async function addContact({ name, email, phone }) {
         const contacts = await listContacts();
 
         const newContacts = {
-            id: nanoid(),
+            id: shortid.generate(),
             name,
             email,
             phone
