@@ -1,12 +1,11 @@
-import { addContact, getContactById, listContacts, removeContact } from "./contacts.js";
-import { program } from "commander";
-
+const { addContact, getContactById, listContacts, removeContact } = require('./contacts.js');
+const { program } = require('commander');
 
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
       case "list":
           const contactsList = await listContacts();
-          console.log(contactsList);
+          console.table(contactsList);
           break;
 
       case "get":
